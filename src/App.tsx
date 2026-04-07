@@ -89,14 +89,6 @@ function Layout({ children }: { children: ReactNode }) {
           >
             La Casa del Crepe
           </motion.h1>
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-lg md:text-xl font-bold opacity-70 tracking-[0.3em] uppercase mt-2"
-          >
-            Menú de Bebidas y Comidas
-          </motion.p>
         </header>
 
         <main className="pb-40">
