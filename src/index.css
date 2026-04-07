@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Patrick Hand", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Luckiest Guy", cursive;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+    background-color: #F5E6D3;
+    background-image: url("https://www.transparenttextures.com/patterns/parchment.png");
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .text-shadow-cartoon {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  }
+}
