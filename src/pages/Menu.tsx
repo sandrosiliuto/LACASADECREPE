@@ -13,8 +13,8 @@ export default function Menu() {
   };
 
   const menuImageUrl = lang === 'es'
-    ? 'https://raw.githubusercontent.com/sandrosiliuto/LACASADELCREPE/main/menuspain.png'
-    : 'https://raw.githubusercontent.com/sandrosiliuto/LACASADELCREPE/main/menuenglish.png';
+    ? 'https://raw.githubusercontent.com/sandrosiliuto/LACASADECREPE/main/images/menuspain.png'
+    : 'https://raw.githubusercontent.com/sandrosiliuto/LACASADECREPE/main/images/menuenglish.png';
 
   return (
     <motion.div
