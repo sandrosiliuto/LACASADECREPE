@@ -104,10 +104,27 @@ export default function Home() {
           Artesanía en cada bocado
         </h3>
         <p className="mt-4 max-w-xl mx-auto text-xl font-bold opacity-80">
-          Desde los clásicos de chocolate hasta nuestras creaciones saladas más atrevidas. 
-          Ven y descubre por qué somos la casa favorita de todos.
+          Desde los clásicos de chocolate hasta nuestras creaciones saladas más atrevidas.
         </p>
+
+        {/* Google Reviews Button */}
+        <div className="mt-8 flex justify-center">
+          <motion.a
+            href="https://www.google.com/search?sca_esv=7d9c60e3220b4d37&sxsrf=ANbL-n4Jz35DB2iv5rz-HxMxV3BwBEIrQQ:1779800742735&q=La+Casa+de+Cr%C3%AApe+Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDc3NTQwN7MwMjM0MjI3tjC22MDI-IpRyidRwTmxOFEhJVXBuejwqoJUhaDU4tTDGxOLF7HikQQA2j88AFQAAAA&rldimm=8775107682612273838&tbm=lcl&hl=es-ES&sa=X&ved=2ahUKEwi9k6q4gteUAxXFQUEAHRCcE9MQ9fQKegQINhAG#lkt=LocalPoiReviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => playBell()}
+            whileHover={{ scale: 1.08, rotate: [0, -1, 1, 0] }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-2 bg-[#4A2C2A] text-[#F5E6D3] px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-[#5C3A38] transition-colors shadow-2xl border-4 border-white text-base md:text-lg cursor-pointer"
+          >
+            <span className="text-yellow-400">★</span>
+            ✨ Déjanos una reseña ✨
+            <span className="text-yellow-400">★</span>
+          </motion.a>
+        </div>
       </motion.div>
+
     </motion.div>
   );
 }
